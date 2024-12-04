@@ -30,7 +30,7 @@ time_coverage_start: AUTOPOPULATE
 time_coverage_end: AUTOPOPULATE
 time_coverage_duration: P1D
 time_coverage_resolution: P60S
-platform: NOAA NRS11 mooring
+platform: NOAA NRS mooring
 instrument: "AUH model ITC-1032, H38 SN1006"
 cdm_data_type: TimeSeries
 references: >-
@@ -40,20 +40,23 @@ references: >-
   https://doi.org/10.1121/10.0005818)
 
 pbp_job_agent:
-  name: NRS08 2014-2016
+  output_prefix: "NRS08_2014-2016"
   recorder: "NRS"
-  audio_base_dir: "nefscdata\PassiveAcoustics_Soundfiles\BOTTOM_MOUNTED\PMEL_NE-OFFSHORE\PMEL_NE-OFFSHORE_201406_NRS08"
-  json_base_dir: "nefscdata\PassiveAcoustics_Soundfiles\BOTTOM_MOUNTED\PMEL_NE-OFFSHORE\PMEL_NE-OFFSHORE_201406_NRS08\PYPAM\JSON"
+  audio_base_dir: "//nefscdata/PassiveAcoustics_Soundfiles/BOTTOM_MOUNTED/PMEL_NE-OFFSHORE/PMEL_NE-OFFSHORE_201406_NRS08"
+  json_base_dir: "//nefscdata/PassiveAcoustics_Soundfiles/BOTTOM_MOUNTED/PMEL_NE-OFFSHORE/PMEL_NE-OFFSHORE_201406_NRS08/PYPAM/JSON"
+  xml_dir: ""
   start: "20140611"
   end: "20150219"
-  nc_output_dir: "nefscdata\PassiveAcoustics_Soundfiles\BOTTOM_MOUNTED\PMEL_NE-OFFSHORE\PMEL_NE-OFFSHORE_201406_NRS08\PYPAM"
-  global_attrs: "nefscdata\PassiveAcoustics_Soundfiles\BOTTOM_MOUNTED\PMEL_NE-OFFSHORE\PMEL_NE-OFFSHORE_201406_NRS08\PYPAM\META\globalAttributes_NRS08_20142016.yaml"
-  variable_attrs: "nefscdata\PassiveAcoustics_Soundfiles\BOTTOM_MOUNTED\PMEL_NE-OFFSHORE\PMEL_NE-OFFSHORE_201406_NRS08\PYPAM\META\variableAttributes_NRS.yaml"
-  latlon: "POINT (40.13, -66.25)"
-  title: ""
-  cmlim: ""
-  ylim: "0, 2000"
-  meta_output_dir: " "
+  prefix: "NRS08"
+  nc_output_dir: "//nefscdata/PassiveAcoustics_Soundfiles/BOTTOM_MOUNTED/PMEL_NE-OFFSHORE/PMEL_NE-OFFSHORE_201406_NRS08/PYPAM"
+  global_attrs: "//nefscdata/PassiveAcoustics_Soundfiles/BOTTOM_MOUNTED/PMEL_NE-OFFSHORE/PMEL_NE-OFFSHORE_201406_NRS08/PYPAM/META/globalAttributes_NRS08_20142016.yaml"
+  variable_attrs: "//nefscdata/PassiveAcoustics_Soundfiles/BOTTOM_MOUNTED/PMEL_NE-OFFSHORE/PMEL_NE-OFFSHORE_201406_NRS08/PYPAM/META/variableAttributes_NRS.yaml"
+  sensitivity_flat_value: ""
+  latlon: "40.13 -66.25"
+  title: "NRS08_2014-2016"
+  cmlim: "50 105"
+  ylim: "10 2000"
+  meta_output_dir: "//nefscdata/PassiveAcoustics_Soundfiles/BOTTOM_MOUNTED/PMEL_NE-OFFSHORE/PMEL_NE-OFFSHORE_201406_NRS08/PYPAM/JSON"
   voltage_multiplier: "2.5"
-  sensitivity_uri: "nefscdata\PassiveAcoustics_Soundfiles\BOTTOM_MOUNTED\PMEL_NE-OFFSHORE\PMEL_NE-OFFSHORE_201406_NRS08\PYPAM\META\NRS08_20142016_sensitivity.nc"
-  log_dir: " "
+  sensitivity_uri: "//nefscdata/PassiveAcoustics_Soundfiles/BOTTOM_MOUNTED/PMEL_NE-OFFSHORE/PMEL_NE-OFFSHORE_201406_NRS08/PYPAM/META/NRS08_20142016_sensitivity.nc"
+  log_dir: "//nefscdata/PassiveAcoustics_Soundfiles/BOTTOM_MOUNTED/PMEL_NE-OFFSHORE/PMEL_NE-OFFSHORE_201406_NRS08/PYPAM/JOB_AGENT_LOGS"

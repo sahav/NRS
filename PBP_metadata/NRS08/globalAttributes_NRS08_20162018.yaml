@@ -17,10 +17,10 @@ acknowledgement: >-
 license: CC 4.0
 standard_name_vocabulary: CF Standard Name Table v80
 date_created: AUTOPOPULATE
-creator_name: Robert Dziak, Jason Gedamke, Samara Haver, Lauren Roche, Leila Hatch, Sofie Van Parijs
+creator_name: Samara Haver
 creator_email: samara.haver@noaa.gov
 creator_url: https://www.fisheries.noaa.gov/contact/samara-haver-phd
-institution: NOAA Pacific Marine Environmental Laboratory, NOAA Northeast Fisheries Science Center
+institution: NOAA Northeast Fisheries Science Center
 publisher_name: NOAA National Centers for Environmental Information
 publisher_email: pad.info@noaa.gov
 publisher_url: https://www.ncei.noaa.gov/products/passive-acoustic-data
@@ -30,7 +30,7 @@ time_coverage_start: AUTOPOPULATE
 time_coverage_end: AUTOPOPULATE
 time_coverage_duration: P1D
 time_coverage_resolution: P60S
-platform: NOAA NRS11 mooring
+platform: NOAA NRS mooring
 instrument: "AUH model ITC-1032, H17 SN1001"
 cdm_data_type: TimeSeries
 references: >-
@@ -38,3 +38,26 @@ references: >-
   followed ISO 18405 3.1.3.13 (International Standard ISO 18405:2017(E), Underwater Acoustics – Terminology.  Geneva: ISO).
   Hybrid millidecade band processing followed Martin et al. (2021a,b:  https://doi.org/10.1121/10.0003324;
   https://doi.org/10.1121/10.0005818)
+
+
+pbp_job_agent:
+  output_prefix: "NRS08_2016-2018"
+  recorder: "NRS"
+  audio_base_dir: "//nefscdata/PassiveAcoustics_Soundfiles/BOTTOM_MOUNTED/PMEL_NE-OFFSHORE/PMEL_NE-OFFSHORE_201604_NRS08"
+  json_base_dir: "//nefscdata/PassiveAcoustics_Soundfiles/BOTTOM_MOUNTED/PMEL_NE-OFFSHORE/PMEL_NE-OFFSHORE_201604_NRS08/PYPAM/JSON"
+  xml_dir: ""
+  start: "20160422"
+  end: "20180425"
+  prefix: "NRS08"
+  nc_output_dir: "//nefscdata/PassiveAcoustics_Soundfiles/BOTTOM_MOUNTED/PMEL_NE-OFFSHORE/PMEL_NE-OFFSHORE_201604_NRS08/PYPAM"
+  global_attrs: "//nefscdata/PassiveAcoustics_Soundfiles/BOTTOM_MOUNTED/PMEL_NE-OFFSHORE/PMEL_NE-OFFSHORE_201604_NRS08/PYPAM/META/globalAttributes_NRS08_20162018.yaml"
+  variable_attrs: "//nefscdata/PassiveAcoustics_Soundfiles/BOTTOM_MOUNTED/PMEL_NE-OFFSHORE/PMEL_NE-OFFSHORE_201604_NRS08/PYPAM/META/variableAttributes_NRS.yaml"
+  sensitivity_flat_value: ""
+  latlon: "39.01 -67.27"
+  title: "NRS08_2016-2018"
+  cmlim: "50 105"
+  ylim: "10 2000"
+  meta_output_dir: "//nefscdata/PassiveAcoustics_Soundfiles/BOTTOM_MOUNTED/PMEL_NE-OFFSHORE/PMEL_NE-OFFSHORE_201604_NRS08/PYPAM/JSON"
+  voltage_multiplier: "2.5"
+  sensitivity_uri: "//nefscdata/PassiveAcoustics_Soundfiles/BOTTOM_MOUNTED/PMEL_NE-OFFSHORE/PMEL_NE-OFFSHORE_201604_NRS08/PYPAM/META/NRS08_20162018_sensitivity.nc"
+  log_dir: "//nefscdata/PassiveAcoustics_Soundfiles/BOTTOM_MOUNTED/PMEL_NE-OFFSHORE/PMEL_NE-OFFSHORE_201604_NRS08/PYPAM/JOB_AGENT_LOGS"
